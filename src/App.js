@@ -7,15 +7,13 @@ import Form from './Components/Form';
 import CardsDemo from './CardsDemo';
 function App() {
   return (
-    <div className="App">
-<MantineProvider> 
-  {/* <Object/> */}
-<Form></Form>
-<CardsDemo></CardsDemo>
-
+  <div className="App">
+  <MantineProvider> 
+  <Object/> 
+  <Form></Form>
+  <CardsDemo></CardsDemo>
   </MantineProvider>
-    
-    </div>
+  </div>
   );
 }
 

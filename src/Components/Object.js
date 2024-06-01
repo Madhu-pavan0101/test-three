@@ -10,9 +10,6 @@ function Object() {
   
   },[])
 
- //  Object
-//  Object is collection of variables and Properties
-
 
 
 const obj={
@@ -21,25 +18,28 @@ const obj={
   email:"madhu@gmail.com",
   id:1
 }
+
 console.log(obj)
   return (
     <div>
       
-      <Table>
+      <Table classNames={'demo'}>
         <thead>
+          <tr>
           <td>name</td>
           <td>phonenumber</td>
           <td>email</td>
           <td>id</td>
-        </thead>
-        <tbody>{obj.map(it=>(
-          <tr key={it.id}>
-            <td>{it.name}</td>
-            <td>{it.phonenumber}</td>
           </tr>
-        ))
-          }
-
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>{obj.name}</td>
+            <td>{obj.phonenumber}</td>
+            <td>{obj.email}</td>
+            <td>{obj.id}</td>
+          </tr>
         </tbody>
       </Table>
       
